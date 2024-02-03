@@ -1,0 +1,36 @@
+.grid-container {
+    padding: 100px;
+    background-color: rgb(15, 15, 10);
+    display: grid;
+    /*grid-template-columns: 100px 500px;*/
+    grid-template-rows:repeat(4,120px) ;
+    grid-row-gap: 20px;
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "sidebar content"
+} 
+
+.grid-item {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #535353;
+    background-color: #dfdfdf;
+}
+
+.grid-item-1 {
+    grid-area: header;
+}
+
+.grid-item-2 {
+    grid-area: sidebar;
+}
+
+.grid-item-3 {
+   grid-area:  content;
+}
+a {
+    background-color: yellow;
+    
+}
+    
